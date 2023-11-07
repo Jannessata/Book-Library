@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Dangrek&family=Rubik:wght@400;500&display=swap');
+
+:root{
+    --light-pink: #ffe1f8;
+    --velvet-logo: #e06df7;
+    --dark-velvet: #903aa3;
+    --darker-velvet-hover: #511a5d;
+    --white: #fff;
+    --input-border: #9c99c9af;
+    --background-read: #F9BBF9;
+    --background-read-hover: #f2e3f2;
+    --background-unread:  #bbc4f9;
+    --background-unread-hover: #e3e9f2;
+    --dark-blue:  #3a3ea3;
+    --input-inside-color: #574a5a;
+}
+
+body{
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    font-size: 14px;
+    background:  var(--light-pink);
+	height: 100vh;
+}
+
+.header{
+    height: 10vh;
+    
+}
+
+.logo{
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    color: var(--velvet-logo);
+    font-family: 'Dangrek', sans-serif;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+.logo h3{
+    margin: 20px 0 0 0;
+    font-size: 30px;
+}
+
+
+.logo span{
+    color: var(--dark-velvet);
+}
+
+.logo i{
+    font-size: 30px;
+    color: var(--dark-velvet); 
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+.container{
+    min-height: 500px;
+    margin-top: 50px;
+    position: relative;
+}
+
+
+.container .count-books{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 70vw;
+    margin: 30px auto 0;
+    
+}
+
+#count_book_id{
+    width: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.container .add-book .books{
+    width: 80vw;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    margin: 30px auto 0;
+    justify-content: space-around;
+}
+
+.container .add-book{
+   min-height: 100px;
+}
+
+.container .add-book button{
+    width: 60px;
+    height: 30px;
+    justify-content: center;
+}
+
+.container .add-book .books input{
+    height: 40px;
+    width: 300px;
+    margin-top: 5px;
+    outline: none;
+    border: 2px solid var(--input-border);
+    border-radius: 10px;
+    font-size: 14px;
+    color: var(--input-inside-color);
+}
+
+.container .add-book .books input:focus{
+    border: 2px solid var(--dark-velvet);
+}
+
+.container .add-book .books .add-pages {
+    width: 80px;
+}
+
+.container .add-book .books .add{
+    position: relative;
+}
+
+.container .add-book .books .add label{
+    position: absolute;
+    top: -20px;
+    font-size: 16px;
+}
+
+.container .add-book .add .read{
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    background: var(--background-read);
+    font-weight: bold;
+    color: var(--dark-velvet);
+    cursor: pointer;
+}
+
+.container .add-book .add .read:hover{
+    background: var(--background-read-hover);
+    font-weight: bold;
+    transition: ease .3s;
+}
+
+.container .add-book .add .unread{
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    background: var(--background-unread);
+    font-weight: bold;
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.unread-status{
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    background: var(--background-unread);
+    font-weight: bold;
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.read-status{
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 10px;
+    background: var(--background-read);
+    font-weight: bold;
+    color: var(--dark-velvet);
+    cursor: pointer;
+}
+
+.read-status:hover{
+    background: var(--background-read-hover);
+    font-weight: bold;
+    transition: ease .3s;
+}
+
+.unread-status:hover{
+    background: var(--background-unread-hover);
+    font-weight: bold;
+    transition: ease .3s;
+}
+
+.container .add-book .add .unread:hover{
+    background: var(--background-unread-hover);
+    font-weight: bold;
+    transition: ease .3s;
+}
+
+.container .add-book .books .add .add-pages,
+.container .add-book .add input[type='text']{
+   padding-left: 10px;
+}
+
+.container .add-book .books .submit{
+    width: 80px;
+    height: 40px;
+    margin-top: 5px;
+    border-radius: 10px;
+    border: 2px solid var(--dark-velvet);
+    background: var(--white);
+    font-weight: bold;
+    color: var(--dark-velvet);
+    cursor: pointer;
+}
+
+.container .add-book .books .submit:hover{
+    background: var(--dark-velvet);
+    color: var(--white);
+    transition: ease .3s;
+}
+
+.container .info-books .table_head{
+    margin: 0 auto;
+}
+
+.container .info-books .table_head{
+    border-top: 3px double var(--velvet-logo);
+    min-height: 100px;
+    min-width: 1000px;
+    width: 1200px;
+}
+
+.container .info-books .table{
+    margin: 0 auto;
+    min-width: 1200px;
+    width: 1200px;
+}
+
+.container .info-books table tr th,
+.container .info-books .table tr td{
+    width: 250px;
+    padding-top: 20px;
+    word-break: break-all;
+    padding-right: 20px;
+}
+
+.container .info-books .table td:last-child{
+    padding-right: 0; 
+}
+
+
+.container .info-books .table .pages,
+.container .info-books .table .stat,
+.container .info-books .table .delete{
+    text-align: center;
+}
+
+.container .info-books .table_head tr .delete:hover{
+    color: var(--darker-velvet-hover);
+}
+
+.container .info-books .table .newRow .delete .delete-btn{
+    border: 1px solid var(--darker-velvet-hover);
+    border-radius: 5px;
+    height: 30px;
+    font-size: 14px;
+    color: var(--white);
+    background: var(--darker-velvet-hover);
+    cursor: pointer;
+}
+
+.container .info-books .table .newRow .delete button:hover{
+    background: var(--dark-velvet);
+    transition: ease .3s;
+}

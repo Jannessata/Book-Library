@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <i class='bx bxs-book-open'></i>
+            <h3>My<span>Book</span>Library</h3>  
+        </div>
+    </div>
+    <div class="container">
+        <div class="count-books">
+            <div class="total-books" id="count_book_id">
+                <h4>BOOKS</h4>
+                <h4 class="total-books-number">0</h4>
+            </div>
+        </div>
+        <div class="add-book">
+            <div class="books">
+                <div class="add">
+                    <label for="new_book">Book</label>
+                    <input type="text" id="new_book">
+                </div>
+                <div class="add">
+                    <label for="new_author">Author</label>
+                    <input type="text" id="new_author">
+                </div>
+                <div class="add">
+                    <label for="choose_pages">Pages</label>
+                    <input type="number" id="choose_pages" class="add-pages" min="0" placeholder="0">
+                </div>
+                <div class="add">
+                    <label for="status">Status</label>
+                    <button class="read" id="status">READ</button>
+                </div>  
+                    <button class="submit" id="submit">Add</button>
+            </div>
+        </div>
+        <div class="info-books" id="info_books">
+            <table class="table_head">
+                <tr>
+                    <th>Name</th>
+                    <th>Author</th>
+                    <th class='pages-info'>Pages</th>
+                    <th class='status-info'>Status</th> 
+                    <th></th>
+                </tr>
+            </table>
+            <table class="table">
+
+            </table>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
