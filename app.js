@@ -18,12 +18,16 @@ submitButton.addEventListener('click', (e) => {
     printBooks();
 })
 
-function Book(name, author, pages, status) {
-    this.name = name;
-    this.author = author;
-    this.pages = pages;
-    this.status = status;
-    this['data-index'] = myLibrary.length;
+class Book{
+
+    constructor(name, author, pages, status){
+        this.name = name;
+        this.author = author;
+        this.pages = pages;
+        this.status = status;
+        this['data-index'] = myLibrary.length;
+    }
+   
 }
 
 const printBooks = () => {
